@@ -1,1 +1,94 @@
 
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} % loads  TikZ and tkz-base
+\usepackage{listings}
+
+\begin{document}
+
+
+\vspace{3cm}
+
+\title{
+%	\logo{
+AI5030-Probability Assignment 1
+%	}
+}
+\author{ Samuktha V. (AI23MTECH02004)
+
+	\thanks{*The author is with the Department
+		of Dept. of AI, Indian Institute of Technology, Hyderabad
+		502285 India e-mail:  ai23mtech02004@iith.ac.in. All content in this manual is released under GNU GPL.  Free and open source.}
+}
+
+% make the title area
+\maketitle
+
+\newpage
+
+
+\textbf{Question 10.13.3.23 }
+\newline
+\textbf{Two dice are numbered 1, 2, 3, 4, 5, 6 and 1, 1, 2, 2, 3, 3, respectively. They are
+thrown and the sum of the numbers on them is noted. Find the probability of getting
+each sum from 2 to 9 separately }
+\newline
+\newline
+\textbf{\emph{Solution:} Solving using Z-Transform}
+\newline
+\newline
+{ Let X be the discrete random variable corresponding to dice 1: \[ X \in \{1,2,3,4,5,6\} \]}
+The Z-transform of X is denoted as \[X(z)=E[z^{-X}]=\sum_{x=-\infty}^{\infty} p_X(x) z^{-x}\]
+\newline
+Here,
+\[X[z] = \frac{z^{-1}}{6} + \frac{z^{-2}}{6} + \frac{z^{-3}}{6} + \frac{z^{-4}}{6} + \frac{z^{-5}}{6} + \frac{z^{-6}}{6}  \]
+
+\begin{equation}
+\boldmath{X[z]=\frac{z^{-1}+z^{-2}+z^{-3}+ z^{-4}+ z^{-5} + z^{-6}}{6}}
+\end{equation}
+\newline
+{ Let Y be the discrete random variable corresponding to dice 2: \[ Y \in \{1,1,2,2,3,3\} \]}
+The Z-transform of Y is denoted as \[Y(z)=E[z^{-Y}]=\sum_{y=-\infty}^{\infty} p_Y(y) z^{-y}\]
+\newline
+Here,
+\[Y[z] = \frac{z^{-1}}{6} + \frac{z^{-1}}{6} + \frac{z^{-2}}{6} + \frac{z^{-2}}{6} + \frac{z^{-3}}{6} + \frac{z^{-3}}{6}  \]
+
+\begin{equation}
+\boldmath{Y[z]=\frac{z^{-1}+z^{-2}+z^{-3}}{3}}
+\end{equation}
+\newline
+Let Z be the random variable that denotes the sum of the numbers when the above two dice are thrown.\[ Z \in \{2,3,4,5,6,7,8,9\} \] Since X and Y are independent events, the probability corresponding to Z can be obtained by fining the Z-Transform as follows:
+\[Z(z)=E[Z^{-(X+Y)}]=E[Z^{-X}]E[Z^{-Y}] \]
+\begin{equation}
+   \boldmath{Z[z] = X[z]Y[z]}
+\end{equation}
+Substituting (1) and (2) in (3) we get,
+\[ Z[z]=\left(\frac{z^{-1}+z^{-2}+z^{-3}+ z^{-4}+ z^{-5} + z^{-6}}{6}\right)\left( \frac{z^{-1}+z^{-2}+z^{-3}}{3}\right) \]
+On solving we obtain,
+\boldmath{\[ Z[z]=\left(\frac{z^{-2}}{18}+\frac{z^{-3}}{9}  +\frac{z^{-4}+z^{-5}+z^{-6}+z^{-7}}{6} +\frac{z^{-8}}{9}  +\frac{z^{-9}}{18}\right)\]}
+Hence from the above expression we get the required probabilities as,
+\[ Pr[Z=2] = \frac{1}{18} \]
+\[ Pr[Z=3] = \frac{1}{9} \]
+\[ Pr[Z=4] = \frac{1}{6} \]
+\[ Pr[Z=5] = \frac{1}{6} \]
+\[ Pr[Z=6] = \frac{1}{6} \]
+\[ Pr[Z=7] = \frac{1}{6} \]
+\[ Pr[Z=8] = \frac{1}{9} \]
+\[ Pr[Z=9] = \frac{1}{18} \]
+
+
+
+\end{document}
