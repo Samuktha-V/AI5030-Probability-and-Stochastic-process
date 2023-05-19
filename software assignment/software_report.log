@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.18)  18 MAY 2023 16:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.18)  19 MAY 2023 11:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1020,12 +1020,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 2
  (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
-No file software_report.aux.
+(./software_report.aux)
 \openout1 = `software_report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 20.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 20.
+
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1152,6 +1153,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 20.
 LaTeX Info: Redefining \pageref on input line 20.
 LaTeX Info: Redefining \nameref on input line 20.
+
+(./software_report.out) (./software_report.out)
 \@outlinefile=\write4
 \openout4 = `software_report.out'.
 
@@ -1245,36 +1248,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
+<gui.jpg, id=7, 378.41376pt x 451.6875pt>
+File: gui.jpg Graphic file (type jpg)
+<use gui.jpg>
+Package pdftex.def Info: gui.jpg  used on input line 75.
+(pdftex.def)             Requested size: 113.525pt x 135.5073pt.
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-] (./software_report.aux)
+ <./gui.jpg>]
+(./software_report.aux)
 
-Package rerunfilecheck Warning: File `software_report.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: Checksums for `software_report.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `software_report.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 28948 strings out of 478287
- 572783 string characters out of 5849289
- 828596 words of memory out of 5000000
- 46553 multiletter control sequences out of 15000+600000
+ 28965 strings out of 478287
+ 573020 string characters out of 5849289
+ 829825 words of memory out of 5000000
+ 46561 multiletter control sequences out of 15000+600000
  526408 words of font info for 141 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 101i,6n,96p,419b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,8n,96p,419b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1
 /urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
 i8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on software_report.pdf (1 page, 46846 bytes).
+Output written on software_report.pdf (1 page, 80058 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
- 28 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 44 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
+ 18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
